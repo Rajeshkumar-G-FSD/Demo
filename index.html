@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My web page</title>
+    </head>
+    <body>
+        <h1>Hello, world!</h1>
+        <p>This is my first web page.</p>
+        <p>It contains a 
+             <strong>main headings</strong> and <em> paragraph </em>.
+        </p>
+        <script>
+
+            var a=5;
+            var b="Hello"
+            var c="5"
+            var d = 56.5
+            var f = a+d
+            console.log(f)
+            var g = a+b
+            console.log(g)
+            console.log(typeof g)
+
+            var k ={
+                name : "Rajeshkumar",
+                age:36,
+                email:"rktechappcode@gmail.com",
+                address :{
+                   
+                },
+              
+                wifename:"VanithaSree",
+                wifehoppy : {
+                    music : "hearing"
+                }
+
+               
+
+            };
+           k.phone = 8072117912
+            delete k.age
+          //  console.log(k)
+          var produts =
+            [
+                {
+                title:"iphone",
+                print: 1500000,
+                model : "17 pro max",
+                colors :["red", "black"],
+                config :{
+                    memory:"12gb",
+                    camera :"18mp"
+                },
+            availablelocations:[
+                {
+                    city :"Coimbatore",
+                    isStock:true,
+                    qty:500
+                },
+                {
+                    city :"Chennai",
+                    isStock:true,
+                    qty:5000
+                },
+            
+            ],
+            
+
+            }
+            
+        ]
+        console.log(produts)
+        
+
+            
+        
+
+          alert("Hi Krithiv");
+
+          let valu = prompt("Enter value 5 to 10");
+
+          if(valu >=4&&valu<=20){
+            alert("true");
+
+          }else{
+            alert("false");
+
+          }
+
+          //functions
+
+          function singSong(x){
+            //Statements
+
+            console.log("Krithiv");
+            console.log("Krithiv is Good Boy");
+            return x+2
+
+
+          }
+
+          singSong(5);
+          console.log(singSong(5));
+
+          //initiilation, condtion,incre/decre
+
+          for(var i=0;i<=10;i++){
+console.log(i);
+          }
+          var dice;
+          var attempt=0;
+
+          do{
+            dice = Math.floor(Math.random()*7);
+            
+            console.log("##"+dice);
+            attempt++
+          }
+            
+ while (dice!=6);
+
+ for (k=0;k<3;k++){
+console.log("k"+k);
+ }
+          
+
+            console.log("##"+attempt);
+            
+            console.log(calculateFactorial(5)); 
+            function calculateFactorial(n) {
+let factorial = 1;
+for (let i = 1; i <= n; i++) {
+        factorial *= i;
+    }
+    return factorial;
+}
+console.log(calculateFactorial(7)); 
+let unique = [];
+function removeDuplicates(arr) {
+
+// Your code here: remove duplicates without using Set
+for (let i = 0; i < arr.length; i++) {
+    // If the element is not already in the unique array, add it
+    if (!unique.includes(arr[i])) {
+      unique.push(arr[i]);
+    }
+  }
+
+  return unique;
+}
+
+console.log(removeDuplicates([1, 2, 2, 3, 3, 4])); 
+
+
+
+
+        </script>
+    </body>
+</html>
